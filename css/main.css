@@ -1,0 +1,13 @@
+body {
+    font-family: 'Tauri', 'sans-serif';
+}
+p, li{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+div.jumbotron {
+    background: url(/img/bg.jpg);
+    color: #fff;
+}
+.jumbotron small {
+    color: #fff
+}

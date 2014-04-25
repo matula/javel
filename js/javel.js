@@ -22,7 +22,7 @@ var View = {
     // Load the view from the views folder
     html: function ($view, $callback) {
         var ViewClient = new XMLHttpRequest();
-        ViewClient.open('GET', '/views/' + $view + '.html', true);
+        ViewClient.open('GET', 'views/' + $view + '.html', true);
 
         // After loading, add it to the callback
         ViewClient.onreadystatechange = function () {

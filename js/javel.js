@@ -67,9 +67,12 @@ var Router = function () {
             $el.innerHTML = $route;
         }
     }
+};
 
+var Post = function() {
+    console.log('posting');
+};
 
-}
 
 window.addEventListener('hashchange', Router);
 window.addEventListener('load', Router);

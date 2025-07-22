@@ -1,24 +1,16 @@
 <div class="container">
-
-
     <div class="jumbotron">
         <h1>Javel</h1>
-
         <p class="lead">A Javascript router with Laravel-like syntax.</p>
-
         <p><a class="btn btn-lg btn-success" href="https://github.com/matula/javel" role="button">Github</a></p>
     </div>
-
     <div class="row marketing">
         <div class="col-lg-6">
             <h4>Installation</h4>
-
             <p>For now, just include the javel.js and routes.js files to the footer of the html. Also make sure you have a
                 div (or something) with the id of 'view', as that's where the content is loaded.</p>
-
             <h4>Todo</h4>
-
-            <p>Lots of things:
+            <p>Lots of things:</p>
             <ul>
                 <li>Pass parameters/variables to view</li>
                 <li>Route filtering</li>
@@ -26,36 +18,21 @@
                 <li>Figure out how to implement HTTP verbs</li>
                 <li>and much, much more...</li>
             </ul>
-            </p>
-
         </div>
         <div class="col-lg-6">
             <h4>Making a Route</h4>
-
-            <p><pre><code>
-Route.get('myroute', function() {
+            <pre><code>Route.get('myroute', function() {
     return 'This will simply be echoed in the browser';
-});
-
-</code></pre></p>
-
+});</code></pre>
             <h4>Making a Route with a View</h4>
-
             <p>Put views in the 'views' folder, with the filename as the name of the view with an .html extension. Make
                 sure to pass 'app' to the callback and View.make.</p>
-            <p><pre><code>
-Route.get('myview', function(app) {
+            <pre><code>Route.get('myview', function(app) {
     return View.make('myview', app);
-});
-
-        </code></pre></p>
+});</code></pre>
         </div>
-
-
     </div>
-
     <div class="footer">
         <p></p>
     </div>
-
 </div>

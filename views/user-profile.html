@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="jumbotron">
+        <h1>
+            <small>User Profile:</small>
+            Javel
+        </h1>
+        <p><a class="btn btn-lg btn-success" href="https://github.com/matula/javel" role="button">Github</a></p>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>User Profile</h4>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">User Information</h3>
+                </div>
+                <div class="panel-body">
+                    <p><strong>User ID:</strong> <span id="user-id"></span></p>
+                    <p>This is an example of a route with URL parameters.</p>
+                </div>
+            </div>
+            <h4>Try Different User IDs</h4>
+            <p>
+                <a href="#user/1" class="btn btn-primary">User 1</a>
+                <a href="#user/2" class="btn btn-primary">User 2</a>
+                <a href="#user/3" class="btn btn-primary">User 3</a>
+            </p>
+            <h4>URL Parameters Example</h4>
+            <pre><code>Route.get('user/:id', function(params, requestData) {
+    return View.make('user-profile', function(err, content) {
+        // Set the user ID in the view
+        document.getElementById('user-id').textContent = params.id;
+        return content;
+    });
+});</code></pre>
+            <p><a href="#" class="btn btn-default">Back to Home</a></p>
+        </div>
+    </div>
+    <div class="footer">
+        <p></p>
+    </div>
+</div>
